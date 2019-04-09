@@ -1,0 +1,89 @@
+
+.App {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.input-box {
+  height: 50px;
+  width: 600px;
+  padding: 5px;
+  background: none;
+  border: 1px solid #282c34;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+ul.list-parent {
+  list-style: none;
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px 0;
+    li {
+      text-align: left;
+      padding: 15px;
+      border-bottom: 1px solid #dedede;
+      &.marked {
+        span {
+          text-decoration: line-through;
+        }
+        
+      }
+      span {
+        padding-left: 10px;
+        width: 500px;
+        display: inline-block;
+        vertical-align: top;
+        &.close {
+            float: right;
+            width: 12px;
+            height: 22px;
+            background: rgb(194, 188, 180);
+            border-radius: 11px;
+            padding-right: 6px;
+            cursor: pointer;
+            display: none;
+            text-decoration: none;
+        }
+       
+      }
+      &:hover {
+        background-color: rgb(240, 240, 240);
+        span {
+          &.close {
+            display: block;
+          }
+        }
+      }
+    }
+}
